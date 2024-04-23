@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/persons")
+@RequestMapping("/persons/v1")
 public class PersonController {
     @Autowired
     PersonService personService;

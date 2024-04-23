@@ -1,16 +1,20 @@
 package br.com.erudio.data.vo.v1;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
 import java.util.Objects;
 
-
+@JsonPropertyOrder({"id","firstName", "lastName", "address","gender"})
 public class PersonVO implements Serializable {
 
     private static final  long serialVersionUID = 1L;
     private Long id;
+    @JsonProperty("first_Name")
     private String firstName;
+    @JsonProperty("last_Name")
     private String lastName;
     private String address;
     private String gender;
