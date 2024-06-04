@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/books/v1")
+@RequestMapping("/api/books/v1")
 @Tag(name = "Book", description = "Endpoints for Managing Book")
 public class BookController {
     @Autowired
